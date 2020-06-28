@@ -16,6 +16,7 @@ function! coc_fzf#diagnostics#fzf_run(...) abort
           \ }
     call coc_fzf#common#fzf_run_with_preview(opts)
     call s:syntax()
+    syntax on
   else
     call coc_fzf#common#echom_info('diagnostics list is empty')
   endif
